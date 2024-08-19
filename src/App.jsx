@@ -1,11 +1,16 @@
 const App = () => {
 
-  let x = "GreatStack";
-  let array = ["user1", "user2", "user3"]
+  let data = "boy";
+  let x = 0;
+  const btnClick = () => {
+    console.log("CLicked");
+    x++;
+  }
   return (
     <div>
-     {x}
-     {array.map((user)=>{return <h2>{user}</h2>})}
+      {x}
+      {data==="boy"?<h1>Boy</h1>:<h1>Girl</h1>}
+      <button onClick={() => {btnClick}}>Click Md</button>
     </div>
   )
 }
