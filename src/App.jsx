@@ -4,7 +4,7 @@ import FirstComponent from "./components/FirstComponent";
 const App = () => {
   
   const [x,setx] = useState(0);
-  
+
   const btnClick = () => {
     console.log("Clicked");
     setx(x+1);
@@ -12,7 +12,7 @@ const App = () => {
   }
   return (
     <div>
-      <button onClick={() => {btnClick}}>Click Me</button>
+      <button onClick={() => {btnClick()}}>Click Me</button>
       <FirstComponent data={x}/>
     </div>
   )
